@@ -1,4 +1,3 @@
-- $twitter.search("#nerd, -rt").take(1000).collect do |tweet|
-  - tweet.urls.each do |url|
-    = link_to("#{url.display_url}", "http://#{url.display_url}", target: 'new')
-    %br/
+=form_tag "/search" do
+  = text_field_tag "searchterm"
+  = submit_tag "Search"
