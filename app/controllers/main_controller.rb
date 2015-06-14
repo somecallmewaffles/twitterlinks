@@ -4,7 +4,7 @@ def index
 end
 
 def search
-      @searchterm = params[:accountName]
+      @searchterm = params[:searchterm]
       @searchterm = "#"+@searchterm.to_s+", -rt"
 
 end
