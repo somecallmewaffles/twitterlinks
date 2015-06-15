@@ -1,3 +1,5 @@
+= @searchword
+%br/
 - $twitter.search(@searchterm).take(1000).collect do |tweet|
   - tweet.urls.each do |url|
     = link_to("#{url.display_url}", "http://#{url.display_url}", target: 'new')

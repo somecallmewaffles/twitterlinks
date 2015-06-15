@@ -4,8 +4,8 @@ def index
 end
 
 def search
-      @searchterm = params[:searchterm]
-      @searchterm = "#"+@searchterm.to_s+", -rt"
+      @searchword = params[:searchterm]
+      @searchterm = "#"+@searchword.to_s+", -rt"
 
 end
 
